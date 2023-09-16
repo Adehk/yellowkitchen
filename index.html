@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>yellowkitchen</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <div class="wrapper">
+          <a href="#" class="navbar__logo">
+            <img
+              class="navbar__logo-img"
+              src="images/header-logo.svg"
+              alt="Logo"
+            />
+          </a>
+
+          <ul class="menu">
+            <li class="menu__contact-info">
+              <a href="tel:0800111126" class="menu__link menu__link_contact">
+                <img src="images/phone-icon.svg" alt="Phone icon" />
+                <span>0800 111 126</span>
+              </a>
+              <span class="menu__working-hours">8:00 - 22:00</span>
+            </li>
+            <li><a href="#" class="menu__link">Delivery info</a></li>
+            <li><a href="#" class="menu__link">About us</a></li>
+            <li><a href="#" class="menu__link">Restaurants</a></li>
+            <li><a href="#" class="menu__link">Specialities</a></li>
+            <div class="menu__langauge-option">
+              <span>English</span>
+              <img src="images/down-arrow-icon.svg" alt="A down arrow icon" />
+            </div>
+          </ul>
+
+          <div class="hamburger-menu">
+            <img src="images/hamburger-icon.svg" alt="A hamburger menu icon" />
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="wrapper">
+        <div class="hero__txt-col">
+          <h1 class="hero__title">
+            Your Food court <br />
+            at home
+          </h1>
+          <div class="cta-btns">
+            <a href="#" class="primary-btn">
+              <span class="primary-btn__first-line">Delivery</span>
+              <span class="primary-btn__second-line">Order in</span>
+            </a>
+            <a href="#" class="primary-btn">
+              <span class="primary-btn__first-line">Takeout</span>
+              <span class="primary-btn__second-line">Grab and go</span>
+            </a>
+          </div>
+        </div>
+        <div class="hero__img-col"></div>
+        <div class="hero__rucola-img"></div>
+        <div class="hero__arrow-img"></div>
+        <div class="hero__arrow-txt">Fresh salad, Il Pasifigio</div>
+      </div>
+    </section>
+
+    <section class="cards">
+      <div class="cards__content">
+        <div class="card">
+          <img src="images/clock.svg" alt="Clock icon" class="card__img" />
+          <p class="card__desc">
+            Delivery in all paris <br />
+            in less than 30 minutes
+          </p>
+        </div>
+        <div class="card">
+          <img
+            src="images/delivery.svg"
+            alt="Delivary man icon"
+            class="card__img"
+          />
+          <p class="card__desc">
+            Free delivery <br />
+            from 29 euros
+          </p>
+        </div>
+        <div class="card">
+          <img
+            src="images/eiffel-tower.svg"
+            alt="Eiffel Tower icon"
+            class="card__img"
+          />
+          <p class="card__desc">
+            Only fresh <br />
+            and French products
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="restaurants">
+      <div class="wrapper">
+        <div class="title">
+          <h2 class="title__txt">Restaurants</h2>
+          <a href="#" class="title__btn">Show all</a>
+        </div>
+        <div class="carousel-wrapper">
+          <ul class="carousel">
+            <div class="left-arrow">
+              <img src="images/left-arrow.svg" alt="Left arrow icon" />
+            </div>
+            <li class="carousel-card">
+              <img
+                src="images/dish-1.png"
+                alt="An image of a dish"
+                class="carousel-card__img"
+              />
+              <a href="#" class="carousel-card__logo">
+                <img
+                  src="images/restaurant-logo-1.svg"
+                  alt="A restaurant logo"
+                />
+              </a>
+            </li>
+            <li class="carousel-card carousel-card_hidden600">
+              <img
+                src="images/dish-2.png"
+                alt="An image of a dish"
+                class="carousel-card__img"
+              />
+              <a href="#" class="carousel-card__logo">
+                <img
+                  src="images/restaurant-logo-2.svg"
+                  alt="A restaurant logo"
+                />
+              </a>
+            </li>
+            <li
+              class="carousel-card carousel-card_hidden600 carousel-card_hidden875"
+            >
+              <img
+                src="images/dish-3.png"
+                alt="An image of a dish"
+                class="carousel-card__img"
+              />
+              <a href="#" class="carousel-card__logo">
+                <img
+                  src="images/restaurant-logo-3.svg"
+                  alt="A restaurant logo"
+                />
+              </a>
+            </li>
+            <li
+              class="carousel-card carousel-card_hidden600 carousel-card_hidden875"
+            >
+              <img
+                src="images/dish-4.png"
+                alt="An image of a dish"
+                class="carousel-card__img"
+              />
+              <a href="#" class="carousel-card__logo">
+                <img
+                  src="images/restaurant-logo-4.svg"
+                  alt="A restaurant logo"
+                />
+              </a>
+            </li>
+            <div class="right-arrow">
+              <img src="images/right-arrow.svg" alt="Left arrow icon" />
+            </div>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="search">
+      <div class="search__content">
+        <div class="search__txt">
+          <h2 class="search__title">Your nearest restaurants</h2>
+          <p class="search__desc">
+            Each kitchen works with its own delivery area to deliver food to you
+            as soon as possible
+          </p>
+        </div>
+        <form action="" class="search__form">
+          <div class="search__txt-box">
+            <img src="images/location-icon.svg" alt="Location icon" />
+            <input type="text" placeholder="Enter delivery address" />
+          </div>
+          <button type="submit" class="search__btn">Send</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="specialities">
+      <div class="wrapper">
+        <div class="title">
+          <h2 class="title__txt">Specialities</h2>
+          <a href="#" class="title__btn">Show all</a>
+        </div>
+        <ul class="specialities-carousel">
+          <div class="left-arrow">
+            <img src="images/left-arrow.svg" alt="Left arrow icon" />
+          </div>
+          <li class="specialities-carousel__card">
+            <img
+              class="specialities-carousel__icon"
+              src="images/bagel-icon.svg"
+              alt="A bagel"
+            />
+            <span class="specialities-carousel__txt"> Bagel </span>
+          </li>
+          <li class="specialities-carousel__card">
+            <img
+              class="specialities-carousel__icon"
+              src="images/burger-icon.svg"
+              alt="A burger"
+            />
+            <span class="specialities-carousel__txt"> Burger </span>
+          </li>
+          <li class="specialities-carousel__card">
+            <img
+              class="specialities-carousel__icon"
+              src="images/chicken-icon.svg"
+              alt="A chicken"
+            />
+            <span class="specialities-carousel__txt"> Chicken </span>
+          </li>
+          <li class="specialities-carousel__card">
+            <img
+              class="specialities-carousel__icon"
+              src="images/fish-icon.svg"
+              alt="Fish"
+            />
+            <span class="specialities-carousel__txt"> Fish </span>
+          </li>
+          <li class="specialities-carousel__card">
+            <img
+              class="specialities-carousel__icon"
+              src="images/fishnchips-icon.svg"
+              alt="Fish’Chips"
+            />
+            <span class="specialities-carousel__txt"> Fish’Chips </span>
+          </li>
+          <li class="specialities-carousel__card">
+            <img
+              class="specialities-carousel__icon"
+              src="images/leaf-icon.svg"
+              alt="Salads"
+            />
+            <span class="specialities-carousel__txt"> Salads </span>
+          </li>
+          <li class="specialities-carousel__card">
+            <img
+              class="specialities-carousel__icon"
+              src="images/pizza-icon.svg"
+              alt="Pizza"
+            />
+            <span class="specialities-carousel__txt"> Pizza </span>
+          </li>
+          <li class="specialities-carousel__card">
+            <img
+              class="specialities-carousel__icon"
+              src="images/raviolli-icon.svg"
+              alt="Raviolli"
+            />
+            <span class="specialities-carousel__txt"> Pasta </span>
+          </li>
+          <div class="right-arrow">
+            <img src="images/right-arrow.svg" alt="Left arrow icon" />
+          </div>
+        </ul>
+      </div>
+    </section>
+
+    <section class="categories">
+      <div class="categories-wrapper">
+        <div class="categories-card">
+          <img
+            class="categories-card__yellow-circle"
+            src="images/yellow-circle.svg"
+            alt="A yellow circle"
+          />
+          <span class="categories-card__num">1</span>
+          <span class="categories-card__txt">kitchen</span>
+          <img
+            class="categories-card__yellow-ring"
+            src="images/yellow-ring.svg"
+            alt="A yellow ring"
+          />
+        </div>
+        <div class="categories-card">
+          <img
+            class="categories-card__yellow-circle"
+            src="images/yellow-circle.svg"
+            alt="A yellow circle"
+          />
+          <span class="categories-card__num">11</span>
+          <span class="categories-card__txt">specialties</span>
+          <img
+            class="categories-card__yellow-ring"
+            src="images/yellow-ring.svg"
+            alt="A yellow ring"
+          />
+        </div>
+        <div class="categories-card">
+          <img
+            class="categories-card__yellow-circle"
+            src="images/yellow-circle.svg"
+            alt="A yellow circle"
+          />
+          <span class="categories-card__num">11</span>
+          <span class="categories-card__txt">restaurants</span>
+          <img
+            class="categories-card__yellow-ring"
+            src="images/yellow-ring.svg"
+            alt="A yellow ring"
+          />
+        </div>
+        <div class="categories-card">
+          <img
+            class="categories-card__yellow-circle"
+            src="images/yellow-circle.svg"
+            alt="A yellow circle"
+          />
+          <span class="categories-card__num">1</span>
+          <span class="categories-card__txt">transport costs</span>
+          <img
+            class="categories-card__yellow-ring"
+            src="images/yellow-ring.svg"
+            alt="A yellow ring"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="map">
+      <div class="wrapper">
+        <picture>
+          <source srcset="images/map-mobile.png" media="(max-width: 800px)" />
+          <img class="map__img" src="images/map-desktop.png" alt="A map" />
+        </picture>
+      </div>
+    </section>
+
+    <section class="ininstagram">
+      <div class="wrapper">
+        <div class="ininstagram__content">
+          <div class="ininstagram__title">
+            #YellowKitchens <span>in instagram</span>
+          </div>
+          <div class="ininstagram__img-gallery">
+            <img
+              src="images/img-1.png"
+              alt="An image of a street kitchen"
+              class="ininstagram__img"
+            />
+            <img
+              src="images/img-2.png"
+              alt="An image of people in a kitchen"
+              class="ininstagram__img"
+            />
+            <img
+              src="images/img-3.png"
+              alt="An image of a person eating food"
+              class="ininstagram__img"
+            />
+            <img
+              src="images/img-4.png"
+              alt="An image of food"
+              class="ininstagram__img"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="footer__content">
+          <div class="footer__left-col">
+            <a href="#" class="footer__logo">
+              <img src="images/footer-logo.svg" alt="Logo" />
+            </a>
+            <div class="footer__hl"></div>
+            <div class="app-row">
+              <a href="#">
+                <img
+                  src="images/app-img-1.svg"
+                  alt="Download on the App Store icon"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="images/app-img-2.svg"
+                  alt="Android app on GOogle play icon"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="footer__right-col">
+            <ul class="footer__link-col footer__link-col_col-900">
+              <h3 class="footer__title">About us</h3>
+              <li class="footer__link"><a href="#">Concept</a></li>
+              <li class="footer__link"><a href="#">Franchise</a></li>
+              <li class="footer__link"><a href="#">Business</a></li>
+              <li class="footer__link"><a href="#">Restaurant signup</a></li>
+              <li class="footer__link"><a href="#">For Investors</a></li>
+            </ul>
+            <ul class="footer__link-col footer__link-col_col-900">
+              <h3 class="footer__title">Get help</h3>
+              <li class="footer__link"><a href="#">Read FAQs</a></li>
+              <li class="footer__link"><a href="#">Restaurants</a></li>
+              <li class="footer__link"><a href="#">Specialities</a></li>
+              <li class="footer__link"><a href="#">Sign up to deliver</a></li>
+              <div class="footer__langauge-option">
+                <span>English</span>
+                <img src="images/down-arrow-icon.svg" alt="A down arrow icon" />
+              </div>
+            </ul>
+            <ul class="footer__link-col">
+              <h3 class="footer__title">Contact us</h3>
+              <li class="footer__name">Yellow kitchen Paris 11</li>
+              <li class="footer__address">
+                69 avenue de la Republique 75011 Paris
+              </li>
+              <li class="footer__link">
+                <a href="tel: 0800111126">0800 111 126</a>
+              </li>
+              <li class="footer__link">
+                <a href="mailto: contact@yellowkitchens.com"
+                  >contact@yellowkitchens.com</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__info">
+          <div class="footer__socials">
+            <a href="#"
+              ><img src="images/instagram-icon.svg" alt="An instagram icon"
+            /></a>
+            <a href="#"
+              ><img src="images/twitter-icon.svg" alt="A twitter icon"
+            /></a>
+            <a href="#"
+              ><img src="images/facebook-icon.svg" alt="A facebook icon"
+            /></a>
+          </div>
+          <div class="footer__data-protection">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms</a>
+            <span>&#169; 2020 Yellow kitchen</span>
+          </div>
+          <div class="app-row-mobile">
+            <a href="#">
+              <img
+                src="images/app-img-1.svg"
+                alt="Download on the App Store icon"
+              />
+            </a>
+            <a href="#">
+              <img
+                src="images/app-img-2.svg"
+                alt="Android app on GOogle play icon"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
