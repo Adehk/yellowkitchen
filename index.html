@@ -3,7 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!--Link Font Awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+
     <title>yellowkitchen</title>
+
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -30,14 +44,20 @@
             <li><a href="#" class="menu__link">About us</a></li>
             <li><a href="#" class="menu__link">Restaurants</a></li>
             <li><a href="#" class="menu__link">Specialities</a></li>
-            <div class="menu__langauge-option">
-              <span>English</span>
-              <img src="images/down-arrow-icon.svg" alt="A down arrow icon" />
+
+            <div class="select-container">
+              <select class="select">
+                <option value="English">English</option>
+              </select>
             </div>
           </ul>
 
           <div class="hamburger-menu">
-            <img src="images/hamburger-icon.svg" alt="A hamburger menu icon" />
+            <div class="hamburger-menu-icon">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
           </div>
         </div>
       </nav>
@@ -108,71 +128,134 @@
           <h2 class="title__txt">Restaurants</h2>
           <a href="#" class="title__btn">Show all</a>
         </div>
-        <div class="carousel-wrapper">
-          <ul class="carousel">
-            <div class="left-arrow">
-              <img src="images/left-arrow.svg" alt="Left arrow icon" />
+        <!-- Swiper -->
+        <div class="swiper-container">
+          <div class="swiper mySwiper restaurants-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="#" class="swiper-card">
+                  <img
+                    src="images/dish-1.png"
+                    alt="An image of a dish"
+                    class="swiper-card__img"
+                  />
+                  <div class="swiper-card__logo">
+                    <img
+                      src="images/restaurant-logo-1.svg"
+                      alt="A restaurant logo"
+                    />
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="swiper-card">
+                  <img
+                    src="images/dish-2.png"
+                    alt="An image of a dish"
+                    class="swiper-card__img"
+                  />
+                  <div class="swiper-card__logo">
+                    <img
+                      src="images/restaurant-logo-2.svg"
+                      alt="A restaurant logo"
+                    />
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="swiper-card">
+                  <img
+                    src="images/dish-3.png"
+                    alt="An image of a dish"
+                    class="swiper-card__img"
+                  />
+                  <div class="swiper-card__logo">
+                    <img
+                      src="images/restaurant-logo-3.svg"
+                      alt="A restaurant logo"
+                    />
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="swiper-card">
+                  <img
+                    src="images/dish-4.png"
+                    alt="An image of a dish"
+                    class="swiper-card__img"
+                  />
+                  <div class="swiper-card__logo">
+                    <img
+                      src="images/restaurant-logo-4.svg"
+                      alt="A restaurant logo"
+                    />
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="swiper-card">
+                  <img
+                    src="images/dish-1.png"
+                    alt="An image of a dish"
+                    class="swiper-card__img"
+                  />
+                  <div class="swiper-card__logo">
+                    <img
+                      src="images/restaurant-logo-1.svg"
+                      alt="A restaurant logo"
+                    />
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="swiper-card">
+                  <img
+                    src="images/dish-2.png"
+                    alt="An image of a dish"
+                    class="swiper-card__img"
+                  />
+                  <div class="swiper-card__logo">
+                    <img
+                      src="images/restaurant-logo-2.svg"
+                      alt="A restaurant logo"
+                    />
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="swiper-card">
+                  <img
+                    src="images/dish-3.png"
+                    alt="An image of a dish"
+                    class="swiper-card__img"
+                  />
+                  <div class="swiper-card__logo">
+                    <img
+                      src="images/restaurant-logo-3.svg"
+                      alt="A restaurant logo"
+                    />
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="swiper-card">
+                  <img
+                    src="images/dish-4.png"
+                    alt="An image of a dish"
+                    class="swiper-card__img"
+                  />
+                  <div class="swiper-card__logo">
+                    <img
+                      src="images/restaurant-logo-4.svg"
+                      alt="A restaurant logo"
+                    />
+                  </div>
+                </a>
+              </div>
             </div>
-            <li class="carousel-card">
-              <img
-                src="images/dish-1.png"
-                alt="An image of a dish"
-                class="carousel-card__img"
-              />
-              <a href="#" class="carousel-card__logo">
-                <img
-                  src="images/restaurant-logo-1.svg"
-                  alt="A restaurant logo"
-                />
-              </a>
-            </li>
-            <li class="carousel-card carousel-card_hidden600">
-              <img
-                src="images/dish-2.png"
-                alt="An image of a dish"
-                class="carousel-card__img"
-              />
-              <a href="#" class="carousel-card__logo">
-                <img
-                  src="images/restaurant-logo-2.svg"
-                  alt="A restaurant logo"
-                />
-              </a>
-            </li>
-            <li
-              class="carousel-card carousel-card_hidden600 carousel-card_hidden875"
-            >
-              <img
-                src="images/dish-3.png"
-                alt="An image of a dish"
-                class="carousel-card__img"
-              />
-              <a href="#" class="carousel-card__logo">
-                <img
-                  src="images/restaurant-logo-3.svg"
-                  alt="A restaurant logo"
-                />
-              </a>
-            </li>
-            <li
-              class="carousel-card carousel-card_hidden600 carousel-card_hidden875"
-            >
-              <img
-                src="images/dish-4.png"
-                alt="An image of a dish"
-                class="carousel-card__img"
-              />
-              <a href="#" class="carousel-card__logo">
-                <img
-                  src="images/restaurant-logo-4.svg"
-                  alt="A restaurant logo"
-                />
-              </a>
-            </li>
-            <div class="right-arrow">
-              <img src="images/right-arrow.svg" alt="Left arrow icon" />
-            </div>
-          </ul>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
         </div>
       </div>
     </section>
@@ -202,78 +285,95 @@
           <h2 class="title__txt">Specialities</h2>
           <a href="#" class="title__btn">Show all</a>
         </div>
-        <ul class="specialities-carousel">
-          <div class="left-arrow">
-            <img src="images/left-arrow.svg" alt="Left arrow icon" />
+        <!-- Swiper -->
+        <div class="swiper-container">
+          <div class="swiper mySwiper2 specialities-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="swiper-card">
+                  <img
+                    class="swiper-card__icon"
+                    src="images/bagel-icon.svg"
+                    alt="A bagel"
+                  />
+                  <span class="swiper-card__txt"> Bagel </span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-card">
+                  <img
+                    class="swiper-card__icon"
+                    src="images/burger-icon.svg"
+                    alt="A burger"
+                  />
+                  <span class="swiper-card__txt"> Burger </span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-card">
+                  <img
+                    class="swiper-card__icon"
+                    src="images/chicken-icon.svg"
+                    alt="A chicken"
+                  />
+                  <span class="swiper-card__txt"> Chicken </span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-card">
+                  <img
+                    class="swiper-card__icon"
+                    src="images/fish-icon.svg"
+                    alt="Fish"
+                  />
+                  <span class="swiper-card__txt"> Fish </span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-card">
+                  <img
+                    class="swiper-card__icon"
+                    src="images/fishnchips-icon.svg"
+                    alt="Fish’Chips"
+                  />
+                  <span class="swiper-card__txt"> Fish’Chips </span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-card">
+                  <img
+                    class="swiper-card__icon"
+                    src="images/leaf-icon.svg"
+                    alt="Salads"
+                  />
+                  <span class="swiper-card__txt"> Salads </span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-card">
+                  <img
+                    class="swiper-card__icon"
+                    src="images/pizza-icon.svg"
+                    alt="Pizza"
+                  />
+                  <span class="swiper-card__txt"> Pizza </span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-card">
+                  <img
+                    class="swiper-card__icon"
+                    src="images/raviolli-icon.svg"
+                    alt="Raviolli"
+                  />
+                  <span class="swiper-card__txt"> Pasta </span>
+                </div>
+              </div>
+            </div>
           </div>
-          <li class="specialities-carousel__card">
-            <img
-              class="specialities-carousel__icon"
-              src="images/bagel-icon.svg"
-              alt="A bagel"
-            />
-            <span class="specialities-carousel__txt"> Bagel </span>
-          </li>
-          <li class="specialities-carousel__card">
-            <img
-              class="specialities-carousel__icon"
-              src="images/burger-icon.svg"
-              alt="A burger"
-            />
-            <span class="specialities-carousel__txt"> Burger </span>
-          </li>
-          <li class="specialities-carousel__card">
-            <img
-              class="specialities-carousel__icon"
-              src="images/chicken-icon.svg"
-              alt="A chicken"
-            />
-            <span class="specialities-carousel__txt"> Chicken </span>
-          </li>
-          <li class="specialities-carousel__card">
-            <img
-              class="specialities-carousel__icon"
-              src="images/fish-icon.svg"
-              alt="Fish"
-            />
-            <span class="specialities-carousel__txt"> Fish </span>
-          </li>
-          <li class="specialities-carousel__card">
-            <img
-              class="specialities-carousel__icon"
-              src="images/fishnchips-icon.svg"
-              alt="Fish’Chips"
-            />
-            <span class="specialities-carousel__txt"> Fish’Chips </span>
-          </li>
-          <li class="specialities-carousel__card">
-            <img
-              class="specialities-carousel__icon"
-              src="images/leaf-icon.svg"
-              alt="Salads"
-            />
-            <span class="specialities-carousel__txt"> Salads </span>
-          </li>
-          <li class="specialities-carousel__card">
-            <img
-              class="specialities-carousel__icon"
-              src="images/pizza-icon.svg"
-              alt="Pizza"
-            />
-            <span class="specialities-carousel__txt"> Pizza </span>
-          </li>
-          <li class="specialities-carousel__card">
-            <img
-              class="specialities-carousel__icon"
-              src="images/raviolli-icon.svg"
-              alt="Raviolli"
-            />
-            <span class="specialities-carousel__txt"> Pasta </span>
-          </li>
-          <div class="right-arrow">
-            <img src="images/right-arrow.svg" alt="Left arrow icon" />
-          </div>
-        </ul>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
       </div>
     </section>
 
@@ -340,10 +440,12 @@
 
     <section class="map">
       <div class="wrapper">
-        <picture>
-          <source srcset="images/map-mobile.png" media="(max-width: 800px)" />
-          <img class="map__img" src="images/map-desktop.png" alt="A map" />
-        </picture>
+        <a href="">
+          <picture>
+            <source srcset="images/map-mobile.png" media="(max-width: 800px)" />
+            <img class="map__img" src="images/map-desktop.png" alt="A map" />
+          </picture>
+        </a>
       </div>
     </section>
 
@@ -351,7 +453,7 @@
       <div class="wrapper">
         <div class="ininstagram__content">
           <div class="ininstagram__title">
-            #YellowKitchens <span>in instagram</span>
+            <a href="#">#YellowKitchens </a>in instagram
           </div>
           <div class="ininstagram__img-gallery">
             <img
@@ -417,9 +519,10 @@
               <li class="footer__link"><a href="#">Restaurants</a></li>
               <li class="footer__link"><a href="#">Specialities</a></li>
               <li class="footer__link"><a href="#">Sign up to deliver</a></li>
-              <div class="footer__langauge-option">
-                <span>English</span>
-                <img src="images/down-arrow-icon.svg" alt="A down arrow icon" />
+              <div class="select-container">
+                <select class="select">
+                  <option value="English">English</option>
+                </select>
               </div>
             </ul>
             <ul class="footer__link-col">
@@ -441,15 +544,15 @@
         </div>
         <div class="footer__info">
           <div class="footer__socials">
-            <a href="#"
-              ><img src="images/instagram-icon.svg" alt="An instagram icon"
-            /></a>
-            <a href="#"
-              ><img src="images/twitter-icon.svg" alt="A twitter icon"
-            /></a>
-            <a href="#"
-              ><img src="images/facebook-icon.svg" alt="A facebook icon"
-            /></a>
+            <a href="#" class="footer__socials-link">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#" class="footer__socials-link"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+            <a href="#" class="footer__socials-link">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
           </div>
           <div class="footer__data-protection">
             <a href="#">Privacy Policy</a>
@@ -473,6 +576,10 @@
         </div>
       </div>
     </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <script src="js/script.js"></script>
   </body>
 </html>
